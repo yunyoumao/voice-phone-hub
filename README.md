@@ -2,6 +2,19 @@
 
 这是这台手机上的本地网页应用入口。第一版只做只读状态查看，后续再逐步加入文件管理、Android 自动化、语音助手和远程入口。
 
+## 环境准备
+
+```sh
+# 1. 安装 Node.js（Termux: pkg install nodejs；桌面: brew/apt install nodejs）
+node -v
+
+# 2. 复制配置模板（.env 含 key，不入库）
+cp .env.example .env
+# 在 .env 里填 ZHIPU_API_KEY（智谱 key，用于 GLM 快聊；留空则跳过 GLM、仅走本地工具/Codex）
+
+# 3.（可选）安装 Codex CLI，作为复杂任务的 agent fallback；未装时本地工具与 GLM 仍可正常工作
+```
+
 ## 启动
 
 ```sh
