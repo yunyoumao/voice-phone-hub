@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>手机中枢</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>手机中枢</h1>
+        <p>本机状态、文件整理、Android 自动化和本地服务入口</p>
+      </div>
+      <button id="refresh">刷新</button>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>设备状态</h2>
+          <span id="updated">未刷新</span>
+        </div>
+        <div id="status" class="grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>共享存储</h2>
+          <span>只读概览</span>
+        </div>
+        <div id="storage" class="table"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Android 交互</h2>
+          <span>待安装 Termux:API 应用后启用</span>
+        </div>
+        <div id="android-api" class="grid compact"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>语音日志</h2>
+          <span>最近同步</span>
+        </div>
+        <div id="voice-log" class="voice-list"></div>
+      </section>
+
+      <section class="roadmap">
+        <h2>下一步</h2>
+        <ol>
+          <li>文件管理：重复文件、超大文件、照片/录音按日期整理，所有移动/删除前先预览。</li>
+          <li>本地网页应用：任务、笔记、自动化按钮、局域网访问和登录保护。</li>
+          <li>手机助手：通知、剪贴板、TTS、语音输入、天气、闹钟/日程入口。</li>
+          <li>远程入口：SSH、局域网地址、可选反向隧道，默认不暴露公网。</li>
+        </ol>
+      </section>
+    </main>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

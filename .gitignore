@@ -1,0 +1,9 @@
+node_modules/
+.env
+.voice-token
+*.log
+data/
+.hub-password
+
+# 编辑备份（hook 生成，绝不入库）
+*.bak
